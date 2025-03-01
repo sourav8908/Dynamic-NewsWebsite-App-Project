@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Authentication Popup (Signup/Login) -->
+    <div id="auth-popup" class="auth-popup">
+        <div class="auth-form">
+            <h2>Sign Up / Login</h2>
+            <form id="auth-form">
+                <input type="text" id="username" placeholder="Username" required><br>
+                <input type="password" id="password" placeholder="Password" required><br>
+                <button type="submit">Login</button>
+                <p id="error-msg" style="color: red;"></p>
+            </form>
+            <p>Don't have an account? <span id="signup-link">Sign up here</span></p>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="nav-bar">
+        <div class="main-nav">
+            <a href="#" onclick="reload()">
+                <img src="https://thumbs.dreamstime.com/b/abstract-globe-news-background-loop-k-hd-60488912.jpg" alt="logo">
+            </a>
+            <div class="nav-bar-items">
+                <ul class="flex">
+                    <li class="nav-items" id="cricket" onclick="onNavItemclick('cricket')">Cricket</li>
+                    <li class="nav-items" id="entertainment" onclick="onNavItemclick('entertainment')">Entertainment</li>
+                    <li class="nav-items" id="politics" onclick="onNavItemclick('politics')">Politics</li>
+                    <li class="nav-items" id="stock Market" onclick="onNavItemclick('stock Market')">Stock Market</li>
+                    <li class="nav-items" id="Technology" onclick="onNavItemclick('Technology')">Technology</li>
+                    <li class="nav-items" id="Business" onclick="onNavItemclick('Business')">Business</li>
+                    <li class="nav-items" id="Health" onclick="onNavItemclick('Health')">Health</li>
+                    <li class="nav-items" id="Education" onclick="onNavItemclick('Education')">Education</li>
+                    <li class="nav-items" id="Movies" onclick="onNavItemclick('Movies')">Movies</li>
+                </ul>
+            </div>
+            <div class="search-bar">
+                <input id="search-text" type="text" class="search-item" placeholder="Search....">
+                <button id="search-button" class="search-button">Search</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main content area where news cards will appear -->
+    <main>
+        <div class="card-container flex" id="card-container"></div>
+    </main>
+
+    <!-- Template for news cards -->
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="http://via.placeholder.com./400x200" alt="news image" id="news-img">
+            </div>
+            <div class="card-content">
+                <h3 class="news-title" id="news-title">This is title</h3>
+                <h6 class="news-source" id="news-source">End Gadget 12/10/24</h6>
+                <p class="news-desc" id="news-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam at enim quae omnis odit molestias, alias sunt numquam autem? Tempora inventore obcaecati voluptatum ipsam! Non illum neque deleniti nemo asperiores dignissimos corporis hic sint?</p>
+            </div>
+            <button class="bookmark-btn" onclick="toggleBookmark(this)">Bookmark</button>
+        </div>
+    </template>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+
+</html>
