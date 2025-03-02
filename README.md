@@ -1,4 +1,4 @@
-# NewsWebsite-API-Project
+# Dynamic-NewsWebsite-APP-Project
 
 A dynamic news platform that fetches live news articles in real-time from a third-party API. This project features user authentication, bookmarking, and a responsive user interface for an engaging experience.
 
