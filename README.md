@@ -12,6 +12,12 @@ To create a real-time news platform that allows users to browse, bookmark, and s
 - **User  Authentication**: Secure signup and login for personalized features.
 - **Responsive UI**: Seamless experience across all devices.
 
+  ## 🛠️ Technologies Used
+- **API**: Third-party news API for real-time data.
+- **JavaScript**: Manages API calls and user interactions.
+- **HTML/CSS**: Structure and styling of the website.
+- **Local Storage/Database**: Stores user credentials and bookmarks.
+
 ## 🛤️ User Journey
 
 1. **Landing Page**: View top headlines fetched dynamically.
@@ -60,12 +66,6 @@ To create a real-time news platform that allows users to browse, bookmark, and s
 ## 📝 Conclusion
 
 The **NewsWebsite-API-Project** offers a fully functional news website with real-time updates and personalized features. Future enhancements will include user preferences for news categories and improved security measures.
-
-## 🛠️ Technologies Used
-- **API**: Third-party news API for real-time data.
-- **JavaScript**: Manages API calls and user interactions.
-- **HTML/CSS**: Structure and styling of the website.
-- **Local Storage/Database**: Stores user credentials and bookmarks.
 
 ---
 
